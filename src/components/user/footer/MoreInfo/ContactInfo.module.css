@@ -1,0 +1,44 @@
+.title {
+    color: var(--gray-800);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: var(--gray-600);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.contactRow {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    color: var(--gray-600);
+    font-size: 1.25rem;
+    margin-right: 0.625rem;
+}
+
+
+.label {
+    line-height: 1.25;
+    margin: 0;
+}
+
+.valuePhone {
+    color: var(--gray-800);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.valueEmail {
+    color: var(--gray-800);
+    font-weight: 700;
+    line-height: 1.25;
+}

@@ -1,0 +1,22 @@
+.newsletterContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    row-gap: 0.375rem;
+}
+
+@media (min-width: 768px) {
+    .newsletterContainer {
+        column-gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 15%;
+        padding-right: 15%;
+        row-gap: 0;
+    }
+}
