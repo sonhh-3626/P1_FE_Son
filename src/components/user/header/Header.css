@@ -1,0 +1,13 @@
+.topbar-text-color {
+  color: var(--text-color-light);
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.32px;
+  vertical-align: middle;
+}
+
+.topbar-highlight-color {
+  color: var(--secondary-color);
+}

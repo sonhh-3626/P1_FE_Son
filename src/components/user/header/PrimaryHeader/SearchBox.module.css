@@ -1,0 +1,29 @@
+.searchBoxContainer {
+    align-items: center;
+    background-color: var(--gray-100);
+    border-radius: 0.5rem;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-grow: 1;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    color: var(--gray-600);
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.28px;
+    outline: none;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.searchInput::placeholder {
+    color: var(--gray-500);
+}

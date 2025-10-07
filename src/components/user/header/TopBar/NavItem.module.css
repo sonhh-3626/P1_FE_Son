@@ -1,0 +1,15 @@
+.link {
+    color: var(--gray-500);
+    text-decoration: none;
+    transition: color 150ms ease-in-out;
+    font-size: 0.875rem;
+}
+
+.link:hover {
+    color: var(--gray-800);
+}
+
+.active {
+    font-weight: 600;
+    color: var(--gray-800);
+}

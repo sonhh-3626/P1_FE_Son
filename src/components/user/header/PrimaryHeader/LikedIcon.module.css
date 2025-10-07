@@ -1,0 +1,24 @@
+.iconWrapper {
+    cursor: pointer;
+    position: relative;
+}
+
+.badge {
+    align-items: center;
+    background-color: var(--red-600);
+    border-radius: 9999px;
+    color: var(--white);
+    display: flex;
+    font-size: 10px;
+    font-weight: 600;
+    justify-content: center;
+    right: -0.5rem;
+    height: 1.25rem;
+    line-height: 1;
+    letter-spacing: -0.32px;
+    position: absolute;
+    text-align: center;
+    top: -0.5rem;
+    width: 1.25rem;
+    z-index: 10;
+}

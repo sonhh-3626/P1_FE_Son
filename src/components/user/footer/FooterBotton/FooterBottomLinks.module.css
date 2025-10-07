@@ -1,0 +1,17 @@
+.container {
+    align-items: center;
+    column-gap: 1rem;
+    display: flex;
+    font-size: 0.875rem;
+}
+
+.link {
+    color: var(--gray-600);
+    text-decoration: none;
+    transition: color 150ms ease-in-out, text-decoration 150ms ease-in-out;
+}
+
+.link:hover {
+    color: var(--purple-600);
+    text-decoration: underline;
+}
