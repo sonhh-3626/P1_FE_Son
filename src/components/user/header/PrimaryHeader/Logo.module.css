@@ -1,0 +1,10 @@
+.logoContainer {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+
+.textWrapper {
+    display: inline-block;
+    position: relative;
+}

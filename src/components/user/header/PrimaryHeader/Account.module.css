@@ -1,0 +1,32 @@
+.accountContainer {
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    display: flex;
+}
+
+.icon {
+    color: var(--gray-800);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.textGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.signInText {
+    color: var(--gray-600);
+    font-size: 11px;
+    line-height: 1.2;
+    letter-spacing: -0.32px;
+}
+
+.accountText {
+    color: var(--gray-800);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    line-height: 1.2;
+}

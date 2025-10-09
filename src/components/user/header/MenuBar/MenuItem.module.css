@@ -1,0 +1,22 @@
+.menuItem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    transition-property: color;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    color: var(--primary-color);
+}
+
+.menuItem.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}

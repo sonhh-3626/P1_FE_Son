@@ -1,0 +1,42 @@
+.menuBar {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.menuBarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding: 0 15%;
+}
+
+.menuBarSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menuBarNav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.menuBarRight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .menuBarRight {
+        column-gap: 1rem;
+    }
+}

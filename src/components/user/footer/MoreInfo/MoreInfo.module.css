@@ -1,0 +1,48 @@
+.wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+.infoGrid {
+    column-gap: 2rem;
+    border-top: 1px solid var(--gray-300);
+    display: grid;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    letter-spacing: -0.32px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .infoGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .infoGrid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+.appSocialGroup {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
