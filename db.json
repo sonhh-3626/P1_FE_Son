@@ -11,7 +11,7 @@
       "type": "organic",
       "rating": 4.5,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-15T10:00:00Z"
     },
@@ -26,7 +26,7 @@
       "type": "cold sale",
       "rating": 4.7,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-16T12:00:00Z"
     },
@@ -41,7 +41,7 @@
       "type": "cold sale",
       "rating": 4.2,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-17T14:00:00Z"
     },
@@ -56,7 +56,7 @@
       "type": "organic",
       "rating": 4.6,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -71,7 +71,7 @@
       "type": "cold sale",
       "rating": 4.8,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -86,7 +86,7 @@
       "type": "organic",
       "rating": 4.3,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -101,7 +101,7 @@
       "type": "cold sale",
       "rating": 4.9,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -116,7 +116,7 @@
       "type": "cold sale",
       "rating": 4.7,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -131,7 +131,7 @@
       "type": "organic",
       "rating": 4.4,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -146,7 +146,7 @@
       "type": "cold sale",
       "rating": 4.1,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -161,7 +161,7 @@
       "type": "organic",
       "rating": 4.5,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -176,7 +176,7 @@
       "type": "cold sale",
       "rating": 4.6,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -191,7 +191,7 @@
       "type": "cold sale",
       "rating": 4.3,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -206,7 +206,7 @@
       "type": "organic",
       "rating": 4.8,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -221,7 +221,7 @@
       "type": "cold sale",
       "rating": 4.4,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -236,7 +236,7 @@
       "type": "organic",
       "rating": 4.9,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -244,14 +244,14 @@
       "id": 17,
       "name": "Organic Ground Beef",
       "price": 7.99,
-      "description": "Lean organic ground beef, perfect for your Loved recipes.",
+      "description": "Lean organic ground beef, perfect for your loved recipes.",
       "category": "Meat & Seafood",
       "stockQuantity": 30,
       "discountPercentage": 10,
       "type": "cold sale",
       "rating": 4.7,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -266,7 +266,7 @@
       "type": "cold sale",
       "rating": 4.6,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -281,7 +281,7 @@
       "type": "organic",
       "rating": 4.5,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     },
@@ -296,7 +296,7 @@
       "type": "cold sale",
       "rating": 4.4,
       "imageUrls": ["https://picsum.photos/id/237/400/300"],
-      "Loved": false,
+      "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z"
     }
