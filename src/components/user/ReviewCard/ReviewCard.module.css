@@ -1,0 +1,108 @@
+.reviewCard {
+  border-left: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  border-top-left-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 350px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatarContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarPlaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+}
+
+.avatarPlaceholder::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.avatarPlaceholder::after {
+  content: '';
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 30%;
+  background-color: #eee;
+  border-radius: 50% 50% 0 0;
+}
+
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.featuredTag {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 2px;
+}
+
+.ratingSection {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.reviewCount {
+  font-size: 0.9em;
+  color: #777;
+  margin-left: 8px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.comment {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}

@@ -6,6 +6,7 @@ interface DiscountPriceProps {
   baseCurrency?: 'USD' | 'EUR' | 'VND';
   currentPriceClass?: string;
   originalPriceClass?: string;
+  className?: string; 
 }
 
 const DiscountPrice = ({
@@ -14,6 +15,7 @@ const DiscountPrice = ({
   baseCurrency = 'USD',
   currentPriceClass = 'text-2xl font-bold text-red-600',
   originalPriceClass = 'text-lg text-gray-500 line-through ml-2',
+  className = '',
 } : DiscountPriceProps) => {
   const selectedCurrency = useSelectedCurrency();
 
@@ -24,7 +26,7 @@ const DiscountPrice = ({
   const formattedOriginalPrice = currencyService.formatPrice(convertedOriginalPrice, selectedCurrency);
 
   return (
-    <div className="flex items-baseline">
+    <div className={`flex items-baseline ${className}`}>
       <span className={currentPriceClass}>
         {formattedCurrentPrice}
       </span>

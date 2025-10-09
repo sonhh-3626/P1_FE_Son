@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  margin: 5px 15%;
+}
+
+.list {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  color: #9ca3af;
+  margin: 0 0.25rem;
+}
+
+.label {
+  margin-inline-start: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.link {
+  margin-inline-start: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #2563eb;
+}
+
+@media (min-width: 768px) {
+  .list {
+    gap: 0.5rem;
+  }
+}
