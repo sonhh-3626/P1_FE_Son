@@ -17,7 +17,10 @@ export interface Product {
 
   imageUrls?: string[];
   loved?: boolean;
-  dealEndTime?: Date; //
+  dealEndTime?: Date;
+
+  inStock: boolean;
+  onSale: boolean;
 
   calculateSaving?: () => number;
 }
