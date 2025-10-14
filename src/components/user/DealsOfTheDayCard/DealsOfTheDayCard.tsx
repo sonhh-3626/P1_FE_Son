@@ -37,15 +37,9 @@ export default function DealsOfTheDayCard({
 
   if (!product) return null;
 
-<<<<<<< HEAD
   const handleLovedClick = (event: React.MouseEvent, newLoved: boolean) => {
     event.stopPropagation();
     dispatch(updateProduct({ ...product, loved: newLoved }));
-=======
-  const handleLovedClick = (event: React.MouseEvent, newIsLoved: boolean) => {
-    event.stopPropagation();
-    dispatch(updateProduct({ ...product, isLoved: newIsLoved }));
->>>>>>> ec8d5c1 ([User] Home page - Products List)
   };
 
   const handleAddToCart = () => dispatch(addItemToCart(product));
@@ -59,11 +53,7 @@ export default function DealsOfTheDayCard({
           name={product.name}
           discountPercentage={discountPercentage}
           type={type}
-<<<<<<< HEAD
           loved={product.loved || false}
-=======
-          isLoved={product.isLoved || false}
->>>>>>> ec8d5c1 ([User] Home page - Products List)
           currentImageIndex={currentImageIndex}
           onLovedClick={handleLovedClick}
           onIndicatorClick={handleIndicatorClick}
