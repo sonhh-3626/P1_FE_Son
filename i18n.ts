@@ -160,12 +160,10 @@ i18n.use(initReactI18next).init({
         stockIndicator: {
           lowStockMessage: "This product is about to run out",
         },
-        // New translations for NewProductSection
         newProducts: {
           title: "NEW PRODUCTS",
           subtitle: "Some of the new products arriving this weeks",
         },
-        // New translations for NewArrivalsSection
         newArrivals: {
           title: "New Arrivals",
           subtitle: "Some of the new products arriving this weeks",
@@ -204,17 +202,90 @@ i18n.use(initReactI18next).init({
           inStock: "In Stock",
           onSale: "On Sale",
         },
+        product_description_tab: "Description",
+        product_reviews_tab: "Reviews",
+        loading_reviews: "Loading reviews...",
+        error_reviews: "Error: {{error}}",
+        no_reviews_yet: "No reviews yet.",
+        relatedProducts: {
+          title: "Related Products",
+          loading: "Loading related products...",
+          error: "Error: {{error}}",
+          noProductsFound: "No related products found.",
+        },
+        product: {
+          notFoundOrLoading: "Product not found or loading...",
+          loading: "Loading products...",
+          error: "Error: {{error}}",
+        },
+        confirmItem: {
+          paymentTitle: "Payment.",
+          paymentDescription: "Payment upon receipt of goods, Payment by card in the department, Google Pay, Online card, -5% discount in case of payment",
+          warrantyTitle: "Warranty.",
+          warrantyDescription: "The Consumer Protection Act does not provide for the return of this product of proper quality.",
+        },
+        productActions: {
+          addToWishlist: "Add to wishlist",
+          shareProduct: "Share this Product",
+          compare: "Compare",
+        },
+        productInfo: {
+          orderOnWhatsApp: "Order on WhatsApp",
+        },
+        specialOffer: {
+          title: "Special Offer :",
+          remainingTime: "Remains until the end of the offer.",
+        },
+        product_actions: {
+          add_to_cart: "Add to Cart",
+          buy_now: "Buy now",
+        },
+        featured: "Featured",
+        product_categories: "Product Categories",
+        widget_price_filter: "Price filter"
       },
-      product_categories: "Product Categories",
-      widget_price_filter: "Price filter"
     },
     vi: {
       translation: {
         hello: "Xin chào",
+        product: {
+          notFoundOrLoading: "Sản phẩm không tồn tại hoặc đang được tải...",
+          loading: "Đang tải sản phẩm...",
+          error: "Lỗi: {{error}}",
+        },
+        confirmItem: {
+          paymentTitle: "Thanh toán.",
+          paymentDescription: "Thanh toán khi nhận hàng, Thanh toán bằng thẻ tại cửa hàng, Google Pay, Thẻ trực tuyến, -5% giảm giá khi thanh toán",
+          warrantyTitle: "Bảo hành.",
+          warrantyDescription: "Luật Bảo vệ Người tiêu dùng không quy định việc trả lại sản phẩm chất lượng tốt này.",
+        },
+        productActions: {
+          addToWishlist: "Thêm vào danh sách yêu thích",
+          shareProduct: "Chia sẻ sản phẩm này",
+          compare: "So sánh",
+        },
+        productInfo: {
+          orderOnWhatsApp: "Đặt hàng qua WhatsApp",
+        },
+        specialOffer: {
+          title: "Ưu đãi đặc biệt :",
+          remainingTime: "Còn lại cho đến khi kết thúc ưu đãi.",
+        },
         filterByStatus: {
           productStatus: "Trạng thái sản phẩm",
           inStock: "Còn hàng",
           onSale: "Đang giảm giá",
+        },
+        product_description_tab: "Mô tả",
+        product_reviews_tab: "Đánh giá",
+        loading_reviews: "Đang tải đánh giá...",
+        error_reviews: "Lỗi: {{error}}",
+        no_reviews_yet: "Chưa có đánh giá nào.",
+        relatedProducts: {
+          title: "Sản phẩm liên quan",
+          loading: "Đang tải sản phẩm liên quan...",
+          error: "Lỗi: {{error}}",
+          noProductsFound: "Không tìm thấy sản phẩm liên quan.",
         },
         about_us: "Về chúng tôi",
         my_account: "Tài khoản của tôi",
@@ -368,12 +439,10 @@ i18n.use(initReactI18next).init({
         stockIndicator: {
           lowStockMessage: "Sản phẩm này sắp hết hàng",
         },
-        // New translations for NewProductSection
         newProducts: {
           title: "SẢN PHẨM MỚI",
           subtitle: "Một số sản phẩm mới về trong tuần này",
         },
-        // New translations for NewArrivalsSection
         newArrivals: {
           title: "Hàng mới về",
           subtitle: "Một số sản phẩm mới về trong tuần này",
@@ -407,9 +476,14 @@ i18n.use(initReactI18next).init({
         price_max_upper_limit_error: "Giá tối đa không được vượt quá giới hạn tối đa ({{upperLimit}}).",
         price_min_greater_than_max_error: "Giá tối thiểu không được lớn hơn giá tối đa.",
         price_max_less_than_min_error: "Giá tối đa không được nhỏ hơn giá tối thiểu.",
+        product_actions: {
+          add_to_cart: "Thêm vào giỏ hàng",
+          buy_now: "Mua ngay",
+        },
+        featured: "Featured",
+        product_categories: "Danh mục sản phẩm",
+        widget_price_filter: "Lọc sản phẩm theo giá"
       },
-      product_categories: "Danh mục sản phẩm",
-      widget_price_filter: "Lọc sản phẩm theo giá"
     },
   },
 });

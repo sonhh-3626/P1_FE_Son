@@ -9,6 +9,7 @@ interface CartItemListProps {
 
 export default function CartItemList({ cartItems } : CartItemListProps) {
   const { t } = useTranslation();
+
   return (
     <Card className="shadow-md">
       <CardHeader className="font-semibold text-gray-700 border-b">

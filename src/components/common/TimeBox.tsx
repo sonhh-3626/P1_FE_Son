@@ -1,5 +1,5 @@
 export default function TimeBox({time}: {time: number}) {
   return (
-    <span className="bg-gray-100 border-1 border-gray-200 px-1.5 py-0.5 rounded">{time}</span>
+    <span className="bg-[#FFF3EB] border-1 border-[#FFEDD5] px-2 py-1 rounded text-[#EA580C]">{time}</span>
   );
 }
