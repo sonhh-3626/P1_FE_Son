@@ -3,7 +3,7 @@ import { type Product } from '../../types/Product';
 
 interface ProductState {
   items: Product[];
-  loading: boolean;
+  status: 'idle' | 'loading' | 'succeeded' | 'failed';
   error: string | null;
 }
 
@@ -23,9 +23,25 @@ export const fetchProducts = createAsyncThunk(
   }
 );
 
+export const fetchProductsByCategory = createAsyncThunk(
+  'products/fetchProductsByCategory',
+  async (category: string, { rejectWithValue }) => {
+    try {
+      const response = await fetch(`http://localhost:3000/products?category=${category}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch products by category');
+      }
+      const data = await response.json();
+      return data as Product[];
+    } catch (error: any) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
+
 const initialState: ProductState = {
   items: [],
-  loading: false,
+  status: 'idle',
   error: null,
 };
 
@@ -43,15 +59,27 @@ const productSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchProducts.pending, (state) => {
-        state.loading = true;
+        state.status = 'loading';
         state.error = null;
       })
       .addCase(fetchProducts.fulfilled, (state, action: PayloadAction<Product[]>) => {
-        state.loading = false;
+        state.status = 'succeeded';
         state.items = action.payload;
       })
       .addCase(fetchProducts.rejected, (state, action) => {
-        state.loading = false;
+        state.status = 'failed';
+        state.error = action.payload as string;
+      })
+      .addCase(fetchProductsByCategory.pending, (state) => {
+        state.status = 'loading';
+        state.error = null;
+      })
+      .addCase(fetchProductsByCategory.fulfilled, (state, action: PayloadAction<Product[]>) => {
+        state.status = 'succeeded';
+        state.items = action.payload;
+      })
+      .addCase(fetchProductsByCategory.rejected, (state, action) => {
+        state.status = 'failed';
         state.error = action.payload as string;
       });
   },

@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react';
 import { categories } from "../../../constants/categories";
 import { getVisibleCardCount } from "../../../utils/responsiveUtils";
 
-export default function CategoryCardList() {
-  const [visibleCardCount, setVisibleCardCount] = useState(() =>
-    getVisibleCardCount(window.innerWidth)
-  );
+interface CategoryCardListProps {
+  onCategorySelect: (categoryName: string) => void;
+}
+
+export default function CategoryCardList({ onCategorySelect }: CategoryCardListProps) {
+  const [visibleCardCount, setVisibleCardCount] = useState(2);
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,6 +30,7 @@ export default function CategoryCardList() {
             imgUrl={category.imgUrl}
             title={category.name}
             pathTo={category.pathTo}
+            onClick={onCategorySelect}
           />
         ))}
       </div>

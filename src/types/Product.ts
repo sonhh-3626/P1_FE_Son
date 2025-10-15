@@ -14,10 +14,15 @@ export interface Product {
   type: ProductType;
 
   rating: number;
+  ratingCount?: number;
+  sku: string;
 
-  imageUrls?: string[];
-  loved?: boolean;
-  dealEndTime?: Date; //
+  imageUrls: string[];
+  loved: boolean;
+  dealEndTime?: Date;
+
+  inStock: boolean;
+  onSale: boolean;
 
   calculateSaving?: () => number;
 }

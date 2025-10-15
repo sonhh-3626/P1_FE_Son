@@ -9,11 +9,11 @@ import TypeBadge from '../../common/TypeBadge';
 import ImageSliderIndicator from '../../common/ImageSliderIndicator';
 import type { Product } from '../../../types/Product';
 
-interface ProductCardProps {
+interface ProductDetailImageProps {
   product: Product;
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductDetailImage({ product }: ProductDetailImageProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleIndicatorClick = (index: number) => {
@@ -39,39 +39,29 @@ export default function ProductCard({ product }: ProductCardProps) {
         alt={product.name}
       />
 
-      {product.discountPercentage && (
-        <DiscountBadge
-          discountPercentage={product.discountPercentage}
-          className="absolute top-2 left-2 z-10"
-        />
-      )}
+      <div className="absolute inset-0 flex flex-col justify-between p-2">
+        <div className="flex justify-between">
+          <DiscountBadge discountPercentage={product.discountPercentage} />
+          <LovedToggle loved={product.loved || false} onLovedClick={handleLovedClick} />
+        </div>
 
-      <LovedToggle
-        loved={product.loved || false}
-        onLovedClick={handleLovedClick}
-        className="absolute top-1 right-2 z-10"
-      />
+        <div className="flex justify-between items-end">
+          {product.type && (
+            <TypeBadge
+              label={product.type.toUpperCase()}
+              type={product.type === "organic" ? "organic" : product.type === "cold sale" ? "cold-sale" : ""}
+            />
+          )}
 
-      <ImageSliderIndicator
-        totalImages={product.imageUrls?.length || 0}
-        currentIndex={currentImageIndex}
-        onIndicatorClick={handleIndicatorClick}
-        className="absolute bottom-10 right-3 z-10"
-      />
-
-      {product.type && (
-        <TypeBadge
-          label={product.type.toUpperCase()}
-          type={product.type === "organic" ? "organic" : product.type === "cold sale" ? "cold-sale" : ""}
-          className="absolute bottom-2 left-2 z-10"
-        />
-      )}
-
-      <AddToCartIcon
-        productId={product.id}
-        onAddToCart={handleAddToCart}
-        className="absolute bottom-2 right-3 z-10"
-      />
+          <ImageSliderIndicator
+            totalImages={product.imageUrls?.length || 0}
+            currentIndex={currentImageIndex}
+            onIndicatorClick={handleIndicatorClick}
+            className="absolute bottom-10 right-3 z-10"
+          />
+          <AddToCartIcon productId={product.id} onAddToCart={handleAddToCart} />
+        </div>
+      </div>
     </div>
   );
 }

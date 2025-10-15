@@ -29,8 +29,8 @@ export const MENU_ITEMS_LEFT: MenuItemType[] = [
     type: "dropdown",
     label: "shop",
     items: [
-      { label: "all_products", path: "/shop/all" },
-      { label: "best_sellers", path: "/shop/best" },
+      { label: "all_products", path: "/shop" },
+      { label: "best_sellers", path: "/shop" },
     ],
   },
   { type: "item", label: "fruits_vegetables", path: "/category/fruits" },
