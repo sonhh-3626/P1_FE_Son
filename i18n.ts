@@ -735,7 +735,7 @@ i18n.use(initReactI18next).init({
           items: "Danh sách sản phẩm",
           summary: "Tổng kết đơn hàng",
           notes: "Ghi chú đơn hàng"
-        }
+        },
       },
     },
   },
