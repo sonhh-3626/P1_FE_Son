@@ -1,0 +1,1 @@
+export const REVIEWS_PER_PAGE_DEFAULT = 5;

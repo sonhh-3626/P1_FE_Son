@@ -4,7 +4,7 @@ import { type RootState } from '../../../redux/store';
 import ProductListHeader from '../../../components/common/ProductListHeader';
 import NewsThisWeek from '../../../components/user/NewsThisWeek/NewsThisWeek';
 import ProductCard from '../../../components/user/product/ProductCard';
-import ReviewCard from '../../../components/user/ReviewCard/ReviewCard';
+import ReviewCard from '../../../components/common/ReviewCard/ReviewCard';
 
 export default function NewArrivalsSection() {
   const { t } = useTranslation();
