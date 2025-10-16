@@ -17,7 +17,7 @@ export default function Banner({
   currentPrice,
   originalPrice,
   backgroundImage,
-  onShopNowClick,
+  onShopNowClick = () => {},
 }: BannerProps) {
   const bannerStyle = {
     backgroundImage: `url(${backgroundImage})`,
@@ -29,21 +29,19 @@ export default function Banner({
   const handleShopNowClick = onShopNowClick;
 
   return (
-    <div className="bg-white border-b border-[#E5E7EB]">
-      <div className="container mx-auto" style={{ padding: "0 10%" }}>
-        <section className="bg-gray-100" style={bannerStyle}>
-          <div className="container mx-auto flex items-center py-20">
-            <BannerContent
-              badgeText={badgeText}
-              title={title}
-              description={description}
-              currentPrice={currentPrice}
-              originalPrice={originalPrice}
-              onShopNowClick={handleShopNowClick}
-            />
-          </div>
-        </section>
-      </div>
+    <div className="container mx-auto mb-5">
+      <section className="bg-gray-100" style={bannerStyle}>
+        <div className="container mx-auto flex items-center py-20">
+          <BannerContent
+            badgeText={badgeText}
+            title={title}
+            description={description}
+            currentPrice={currentPrice}
+            originalPrice={originalPrice}
+            onShopNowClick={handleShopNowClick}
+          />
+        </div>
+      </section>
     </div>
   );
 }

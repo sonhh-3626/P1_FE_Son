@@ -1,13 +1,12 @@
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { FaShoppingCart } from 'react-icons/fa';
 import styles from './ShoppingCartIcon.module.css';
+import { type RootState } from '../../../../redux/store';
 
-interface ShoppingCartIconProps {
-  count: number;
-}
-
-export default function ShoppingCartIcon({ count }: ShoppingCartIconProps) {
+export default function ShoppingCartIcon() {
   const navigate = useNavigate();
+  const totalUniqueProducts = useSelector((state: RootState) => state.cart.items.length);
 
   const handleClick = () => {
     navigate('/cart');
@@ -22,7 +21,7 @@ export default function ShoppingCartIcon({ count }: ShoppingCartIconProps) {
       />
 
       <span className={styles.badge}>
-        {count > 99 ? '99+' : count}
+        {totalUniqueProducts > 99 ? '99+' : totalUniqueProducts}
       </span>
     </div>
   )

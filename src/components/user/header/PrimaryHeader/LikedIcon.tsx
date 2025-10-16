@@ -1,14 +1,15 @@
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { FaRegHeart } from 'react-icons/fa';
 
 import styles from './LikedIcon.module.css';
+import { type RootState } from '../../../../redux/store';
 
-interface LikedIconProps {
-  count: number;
-}
-
-export default function LikedIcon({ count }: LikedIconProps) {
+export default function LikedIcon() {
   const navigate = useNavigate();
+  const likedProductsCount = useSelector((state: RootState) =>
+    state.products.items.filter(product => product.loved).length
+  );
 
   const handleClick = () => {
     navigate('/liked-lists');
@@ -18,7 +19,7 @@ export default function LikedIcon({ count }: LikedIconProps) {
     <div className={styles.iconWrapper} onClick={handleClick}>
       <FaRegHeart size={24} className="text-gray-800" />
       <span className={styles.badge}>
-        {count > 10 ? '10+' : count}
+        {likedProductsCount > 10 ? '10+' : likedProductsCount}
       </span>
     </div>
   )

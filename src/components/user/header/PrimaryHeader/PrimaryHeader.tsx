@@ -22,8 +22,8 @@ export default function PrimaryHeader() {
 
         <div className={styles.rightSection}>
           <Account />
-          <LikedIcon count={0}/>
-          <ShoppingCartIcon count={0}/>
+          <LikedIcon/>
+          <ShoppingCartIcon />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ interface BannerCTAProps {
 }
 
 const BannerCTA = ({
-    onShopNowClick,
+    onShopNowClick=() => {},
     currentPrice,
     originalPrice
   }: BannerCTAProps) => {

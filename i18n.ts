@@ -132,6 +132,58 @@ i18n.use(initReactI18next).init({
             },
           },
         },
+        cartPage: {
+          continueShoppingButton: "Continue Shopping",
+          product_list_title: "Products",
+        },
+        cartEmptyState: {
+          title: "YOUR CART IS CURRENTLY EMPTY.",
+          returnToShopButton: "Return to shop",
+        },
+        dealsOfTheDaySection: {
+          title: "DEALS OF THE DAY",
+          subtitle: "Don't miss out on these limited-time offers!",
+        },
+        featuredProductSection: {
+          title: "Featured Products",
+          subtitle: "Do not miss the current offers until the end of month.",
+          freshFindsTitle: "Fresh Finds for Less.",
+          freshFindsDescription: "Explore our selection of new arrivals that combine quality and affordability.",
+        },
+        topCategorySection: {
+          title: "Top Categories",
+          subtitle: "New products with updated stocks.",
+        },
+        viewAllButton: {
+          text: "View all",
+        },
+        stockIndicator: {
+          lowStockMessage: "This product is about to run out",
+        },
+        // New translations for NewProductSection
+        newProducts: {
+          title: "NEW PRODUCTS",
+          subtitle: "Some of the new products arriving this weeks",
+        },
+        // New translations for NewArrivalsSection
+        newArrivals: {
+          title: "New Arrivals",
+          subtitle: "Some of the new products arriving this weeks",
+          reviewComment: "Good quality product can only be found in good stores",
+          news1: {
+            title: "Where flavor meets affordability.",
+            description: "Discover our delicious range of affordable ...",
+          },
+          news2: {
+            title: "Fresh Finds for Less.",
+            description: "Explore our selection of new arrivals that combine quality and affordability.",
+          },
+        },
+        add_to_cart: "Add to cart",
+        cart_summary_title: "Cart Summary",
+        cart_subtotal: "Subtotal",
+        cart_total: "Total",
+        proceed_to_checkout: "Proceed to Checkout",
       },
     },
     vi: {
@@ -203,8 +255,6 @@ i18n.use(initReactI18next).init({
               "Đăng ký ngay để nhận thông tin cập nhật mới nhất về khuyến mãi & phiếu giảm giá. Đừng lo, chúng tôi không spam!",
             placeholder: "Nhập địa chỉ email của bạn",
             sendButton: "GỬI",
-            agreementPrefix: "Tôi đồng ý với",
-            and: "và",
             termsLink: "Điều khoản & Điều kiện",
             privacyLink: "Chính sách Bảo mật & Cookie",
           },
@@ -263,6 +313,58 @@ i18n.use(initReactI18next).init({
             },
           },
         },
+        cartPage: {
+          continueShoppingButton: "Tiếp tục xem sản phẩm",
+          product_list_title: "SẢN PHẨM",
+        },
+        cartEmptyState: {
+          title: "GIỎ HÀNG CỦA BẠN HIỆN ĐANG TRỐNG.",
+          returnToShopButton: "Quay về cửa hàng",
+        },
+        dealsOfTheDaySection: {
+          title: "ƯU ĐÃI TRONG NGÀY",
+          subtitle: "Đừng bỏ lỡ các ưu đãi có hạn này.",
+        },
+        featuredProductSection: {
+          title: "Sản phẩm nổi bật",
+          subtitle: "Đừng bỏ lỡ các ưu đãi hiện tại cho đến cuối tháng.",
+          freshFindsTitle: "Sản phẩm mới với giá tốt hơn.",
+          freshFindsDescription: "Khám phá các sản phẩm mới của chúng tôi, kết hợp giữa chất lượng và giá cả phải chăng.",
+        },
+        topCategorySection: {
+          title: "Danh mục hàng đầu",
+          subtitle: "Sản phẩm mới với số lượng cập nhật.",
+        },
+        viewAllButton: {
+          text: "Xem tất cả",
+        },
+        stockIndicator: {
+          lowStockMessage: "Sản phẩm này sắp hết hàng",
+        },
+        // New translations for NewProductSection
+        newProducts: {
+          title: "SẢN PHẨM MỚI",
+          subtitle: "Một số sản phẩm mới về trong tuần này",
+        },
+        // New translations for NewArrivalsSection
+        newArrivals: {
+          title: "Hàng mới về",
+          subtitle: "Một số sản phẩm mới về trong tuần này",
+          reviewComment: "Sản phẩm chất lượng tốt chỉ có ở những cửa hàng tốt",
+          news1: {
+            title: "Nơi hương vị gặp gỡ sự phải chăng.",
+            description: "Khám phá dòng sản phẩm giá cả phải chăng ngon miệng của chúng tôi...",
+          },
+          news2: {
+            title: "Tìm kiếm mới với giá tốt hơn.",
+            description: "Khám phá lựa chọn các sản phẩm mới của chúng tôi, kết hợp giữa chất lượng và giá cả phải chăng.",
+          },
+        },
+        add_to_cart: "Thêm vào giỏ hàng",
+        cart_summary_title: "CỘNG GIỎ HÀNG",
+        cart_subtotal: "Tạm tính",
+        cart_total: "Tổng",
+        proceed_to_checkout: "TIẾN HÀNH THANH TOÁN",
       },
     },
   },

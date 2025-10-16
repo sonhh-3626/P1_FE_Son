@@ -42,7 +42,6 @@ export default function BannerSlider() {
               currentSlideIndex === index ? styles.active : ''
             }`}
             onClick={() => goToSlide(index)}
-            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
