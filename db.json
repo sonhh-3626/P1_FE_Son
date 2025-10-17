@@ -608,5 +608,124 @@
       "password": "password123",
       "role": "admin"
     }
+  ],
+  "coupons": [
+    {
+      "id": "CUPON10",
+      "discountPercentage": 10,
+      "minAmount": 50,
+      "expires": "2025-12-31"
+    },
+    {
+      "id": "SAVE20",
+      "discountPercentage": 20,
+      "minAmount": 100,
+      "expires": "2025-11-15"
+    },
+    {
+      "id": "FREESHIP",
+      "discountPercentage": 0,
+      "minAmount": 5,
+      "freeShipping": true,
+      "expires": "2025-10-31"
+    }
+  ],
+  "orders": [
+    {
+      "billingDetails": {
+        "first_name": "Hạ",
+        "last_name": "Sơn",
+        "company_name": "Facebook",
+        "country_region": "Vietnam",
+        "street_address": "75 Giai Phong, Hai Ba Trung, Ha Noi",
+        "apartment_suite": "",
+        "town_city": "Ha Noi",
+        "state": "California",
+        "zip_code": "11240",
+        "phone": "0397541644",
+        "email": "sonhh2003@gmail.com",
+        "create_account": false,
+        "ship_to_a_different_address": false,
+        "order_notes": ""
+      },
+      "items": [
+        {
+          "id": 1,
+          "name": "Organic Banana - Fresh and Sweet (1kg)",
+          "price": 1.99,
+          "description": "Fresh organic bananas, rich in potassium.",
+          "category": "fresh-fruits",
+          "stockQuantity": 150,
+          "discountPercentage": 75,
+          "type": "organic",
+          "rating": 4.5,
+          "imageUrls": [
+            "https://picsum.photos/id/237/400/300",
+            "https://picsum.photos/id/238/400/300",
+            "https://picsum.photos/id/1/400/300"
+          ],
+          "loved": false,
+          "totalQuantity": 0,
+          "dealEndTime": "2025-10-15T10:00:00Z",
+          "inStock": true,
+          "onSale": true,
+          "quantity": 3
+        }
+      ],
+      "subtotal": 5.97,
+      "appliedDiscount": 0,
+      "isFreeShipping": false,
+      "finalTotal": 5.97,
+      "orderDate": "2025-10-20T03:25:43.510Z",
+      "id": 1
+    },
+    {
+      "billingDetails": {
+        "first_name": "Hạ",
+        "last_name": "Sơn",
+        "company_name": "Facebook",
+        "country_region": "Vietnam",
+        "street_address": "75 Giai Phong, Hai Ba Trung, Ha Noi",
+        "apartment_suite": "",
+        "town_city": "Ha Noi",
+        "state": "California",
+        "zip_code": "11240",
+        "phone": "0397541644",
+        "email": "sonhh2003@gmail.com",
+        "create_account": false,
+        "ship_to_a_different_address": false,
+        "order_notes": ""
+      },
+      "items": [
+        {
+          "id": 3,
+          "name": "Organic Milk",
+          "price": 3.5,
+          "description": "Fresh organic milk, full of essential nutrients.",
+          "category": "breakfast-dairy",
+          "stockQuantity": 80,
+          "discountPercentage": 5,
+          "type": "cold sale",
+          "rating": 4.2,
+          "imageUrls": [
+            "https://picsum.photos/id/237/400/300",
+            "https://picsum.photos/id/238/400/300",
+            "https://picsum.photos/id/1/400/300"
+          ],
+          "loved": false,
+          "totalQuantity": 0,
+          "dealEndTime": "2025-10-17T14:00:00Z",
+          "inStock": true,
+          "onSale": true,
+          "quantity": 3
+        }
+      ],
+      "subtotal": 10.5,
+      "appliedDiscount": 0,
+      "isFreeShipping": false,
+      "finalTotal": 10.5,
+      "orderDate": "2025-10-20T03:30:23.506Z",
+      "id": 2
+    }
   ]
 }

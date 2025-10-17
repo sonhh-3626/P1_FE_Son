@@ -7,6 +7,8 @@ import CartPage from "../pages/user/cart-page/CartPage";
 import FilterPage from "../pages/user/filter/FilterPage";
 import ProductDetailPage from "../pages/user/product-detail/ProductDetailPage";
 import AuthPage from "../pages/user/auths/AuthPage";
+import PaymentPage from "../pages/user/payment/PaymentPage";
+import OrderPage from "../pages/user/my-account/order-page/OrderPage";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +34,14 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         element: <AuthPage />,
+      },
+      {
+        path: "/payment",
+        element: <PaymentPage />,
+      },
+      {
+        path: "/orders",
+        element: <OrderPage />
       },
       {
         path: "*",

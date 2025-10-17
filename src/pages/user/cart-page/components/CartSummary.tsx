@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Button from "../../../../components/common/Button";
 import CartCouponSection from "./CartCouponSection";
+import { useNavigate } from "react-router-dom";
 
 interface CartSummaryProps {
   subtotal: number;
@@ -8,6 +9,9 @@ interface CartSummaryProps {
 
 export default function CartSummary({ subtotal } : CartSummaryProps) {
   const { t } = useTranslation();
+  const navigate = useNavigate()
+  const navigateToPaymentPage = () => navigate("/payment")
+
   return (
     <div className="shadow-md rounded-lg border bg-card text-card-foreground">
       <div className="font-semibold text-gray-700 border-b p-6 flex flex-col space-y-1.5">
@@ -25,7 +29,10 @@ export default function CartSummary({ subtotal } : CartSummaryProps) {
           <span>{subtotal.toLocaleString()} ₫</span>
         </div>
 
-        <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
+        <Button
+          className="w-full bg-orange-500 hover:bg-orange-600 text-white"
+          onClick={navigateToPaymentPage}
+        >
           {t("proceed_to_checkout")}
         </Button>
 
