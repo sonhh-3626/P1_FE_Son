@@ -608,5 +608,26 @@
       "password": "password123",
       "role": "admin"
     }
+  ],
+    "coupons": [
+    {
+      "id": "CUPON10",
+      "discountPercentage": 10,
+      "minAmount": 50,
+      "expires": "2025-12-31"
+    },
+    {
+      "id": "SAVE20",
+      "discountPercentage": 20,
+      "minAmount": 100,
+      "expires": "2025-11-15"
+    },
+    {
+      "id": "FREESHIP",
+      "discountPercentage": 0,
+      "minAmount": 5,
+      "freeShipping": true,
+      "expires": "2025-10-31"
+    }
   ]
 }
