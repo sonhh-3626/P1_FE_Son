@@ -1,0 +1,39 @@
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.indicatorsContainer {
+    align-items: center;
+    column-gap: 0.75rem;
+    bottom: 10px;
+    background: var(--white);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    height: 21px;
+    left: 50%;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.indicatorButton {
+    border-radius: 50%;
+    background-color: var(--gray-200);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: 7px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 7px;
+}
+
+.active {
+    background-color: var(--primary-color);
+}

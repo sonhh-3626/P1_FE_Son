@@ -1,0 +1,84 @@
+.newsThisWeek {
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 433px;
+  height: 220px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 250px;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.subtitle {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.24px;
+  color: #EA580C;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: -0.88px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 13px;
+  line-height: 19.51px;
+  letter-spacing: -0.32px;
+  vertical-align: middle;
+  color: #6B7280;
+  margin-bottom: 20px;
+}
+
+.newsThisWeek.vertical {
+  flex-direction: column;
+  width: 320px;
+  height: 364.5px;
+  align-items: center;
+}
+
+.newsThisWeek.vertical .content {
+  max-width: none;
+}
+
+.shopNowButton {
+  background-color: white;
+  color: #212529;
+  padding: 0 6px;
+  border-radius: 50px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.24px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.shopNowButton:hover {
+  background-color: var(--gray-200);
+}
+
+.arrow {
+  font-size: 1.2em;
+}

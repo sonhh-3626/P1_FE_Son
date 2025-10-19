@@ -1,0 +1,28 @@
+.title {
+    color: var(--gray-800);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listItem {
+    margin-bottom: 0.5rem;
+}
+
+.link {
+    color: var(--gray-600);
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 150ms ease-in-out, text-decoration 150ms ease-in-out;
+}
+
+.link:hover {
+    color: var(--purple-600);
+    text-decoration: underline;
+}
