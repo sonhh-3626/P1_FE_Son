@@ -249,6 +249,7 @@ i18n.use(initReactI18next).init({
           buy_now: "Buy now",
         },
       },
+      hello: "Hello",
       product_categories: "Product Categories",
       widget_price_filter: "Price filter"
     },
@@ -492,10 +493,18 @@ i18n.use(initReactI18next).init({
         price_min_greater_than_max_error: "Giá tối thiểu không được lớn hơn giá tối đa.",
         price_max_less_than_min_error: "Giá tối đa không được nhỏ hơn giá tối thiểu.",
       },
-        product_actions: {
-          add_to_cart: "Thêm vào giỏ hàng",
-          buy_now: "Mua ngay",
-        },
+      validation: {
+        username_min_length: "Tên người dùng hoặc email phải có ít nhất 6 ký tự.",
+        password_min_length: "Mật khẩu phải có ít nhất 6 ký tự.",
+      },
+      auth: {
+        login: "Đăng nhập",
+        register: "Đăng ký",
+      },
+      product_actions: {
+        add_to_cart: "Thêm vào giỏ hàng",
+        buy_now: "Mua ngay",
+      },
       product_categories: "Danh mục sản phẩm",
       widget_price_filter: "Lọc sản phẩm theo giá"
     },

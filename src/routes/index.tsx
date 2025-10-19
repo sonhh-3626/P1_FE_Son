@@ -6,6 +6,7 @@ import NotFoundPage from "../pages/NotFoundPage";
 import CartPage from "../pages/user/cart-page/CartPage";
 import FilterPage from "../pages/user/filter/FilterPage";
 import ProductDetailPage from "../pages/user/product-detail/ProductDetailPage";
+import AuthPage from "../pages/user/auths/AuthPage";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,14 @@ export const router = createBrowserRouter([
         path: "*",
         element: <NotFoundPage />,
       },
+      {
+        path: "/login",
+        element: <AuthPage />
+      },
+      {
+        path: "/register",
+        element: <AuthPage />
+      }
     ],
   },
 ]);

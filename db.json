@@ -559,5 +559,28 @@
       "comment": "Crisp and sweet apples. Highly recommend!",
       "date": "2025-10-12"
     }
+  ],
+  "users": [
+    {
+      "id": "user-1",
+      "email": "customer@example.com",
+      "username": "customer",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "user-2",
+      "email": "vendor@example.com",
+      "username": "vendor",
+      "password": "password123",
+      "role": "vendor"
+    },
+    {
+      "id": "user-3",
+      "email": "admin@example.com",
+      "username": "admin",
+      "password": "password123",
+      "role": "admin"
+    }
   ]
 }
