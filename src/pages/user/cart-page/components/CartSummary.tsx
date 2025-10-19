@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { Card, CardContent, CardHeader } from '../../../../components/common/Card';
 import Button from "../../../../components/common/Button";
 import CartCouponSection from "./CartCouponSection";
 
@@ -10,11 +9,11 @@ interface CartSummaryProps {
 export default function CartSummary({ subtotal } : CartSummaryProps) {
   const { t } = useTranslation();
   return (
-    <Card className="shadow-md">
-      <CardHeader className="font-semibold text-gray-700 border-b">
+    <div className="shadow-md rounded-lg border bg-card text-card-foreground">
+      <div className="font-semibold text-gray-700 border-b p-6 flex flex-col space-y-1.5">
         {t("cart_summary_title")}
-      </CardHeader>
-      <CardContent className="space-y-4">
+      </div>
+      <div className="space-y-4 p-6 pt-0">
         <div className="flex justify-between border-b pb-2">
           <span>{t("cart_subtotal")}</span>
           <span className="font-medium">
@@ -31,7 +30,7 @@ export default function CartSummary({ subtotal } : CartSummaryProps) {
         </Button>
 
         <CartCouponSection />
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 };

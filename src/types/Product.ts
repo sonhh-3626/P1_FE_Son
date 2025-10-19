@@ -14,9 +14,11 @@ export interface Product {
   type: ProductType;
 
   rating: number;
+  ratingCount?: number;
+  sku: string;
 
-  imageUrls?: string[];
-  loved?: boolean;
+  imageUrls: string[];
+  loved: boolean;
   dealEndTime?: Date;
 
   inStock: boolean;
