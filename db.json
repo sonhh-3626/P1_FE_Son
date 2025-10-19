@@ -13,7 +13,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-15T10:00:00Z",
@@ -33,7 +34,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-16T12:00:00Z",
@@ -43,7 +45,7 @@
     {
       "id": 3,
       "name": "Organic Milk",
-      "price": 3.50,
+      "price": 3.5,
       "description": "Fresh organic milk, full of essential nutrients.",
       "category": "breakfast-dairy",
       "stockQuantity": 80,
@@ -53,7 +55,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-17T14:00:00Z",
@@ -63,7 +66,7 @@
     {
       "id": 4,
       "name": "Organic Eggs",
-      "price": 4.20,
+      "price": 4.2,
       "description": "Farm-fresh organic eggs, great for breakfast.",
       "category": "breakfast-dairy",
       "stockQuantity": 100,
@@ -73,7 +76,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -83,7 +87,7 @@
     {
       "id": 5,
       "name": "Organic Bread",
-      "price": 3.00,
+      "price": 3,
       "description": "Artisan organic bread, baked fresh daily.",
       "category": "breads-bakery",
       "stockQuantity": 60,
@@ -93,7 +97,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -113,7 +118,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -133,7 +139,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -143,7 +150,7 @@
     {
       "id": 8,
       "name": "Organic Salmon Fillet",
-      "price": 12.50,
+      "price": 12.5,
       "description": "Wild-caught organic salmon, rich in Omega-3s.",
       "category": "meats-seafood",
       "stockQuantity": 15,
@@ -153,7 +160,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -173,7 +181,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -183,7 +192,7 @@
     {
       "id": 10,
       "name": "Organic Orange Juice",
-      "price": 4.00,
+      "price": 4,
       "description": "100% pure organic orange juice, no added sugar.",
       "category": "beverages",
       "stockQuantity": 90,
@@ -193,7 +202,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -203,7 +213,7 @@
     {
       "id": 11,
       "name": "Organic Spinach",
-      "price": 2.20,
+      "price": 2.2,
       "description": "Fresh organic spinach, great for salads or cooking.",
       "category": "fresh-vegetables",
       "stockQuantity": 110,
@@ -213,7 +223,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -223,7 +234,7 @@
     {
       "id": 12,
       "name": "Organic Tomatoes",
-      "price": 3.10,
+      "price": 3.1,
       "description": "Juicy organic tomatoes, perfect for sauces and salads.",
       "category": "fresh-vegetables",
       "stockQuantity": 95,
@@ -233,7 +244,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -253,7 +265,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -263,7 +276,7 @@
     {
       "id": 14,
       "name": "Organic Cheese",
-      "price": 6.50,
+      "price": 6.5,
       "description": "Artisan organic cheese, perfect for any occasion.",
       "category": "breakfast-dairy",
       "stockQuantity": 40,
@@ -273,7 +286,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -293,7 +307,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -313,7 +328,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -333,7 +349,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -343,7 +360,7 @@
     {
       "id": 18,
       "name": "Organic Shrimp",
-      "price": 14.00,
+      "price": 14,
       "description": "Fresh organic shrimp, great for grilling or stir-frying.",
       "category": "meats-seafood",
       "stockQuantity": 20,
@@ -353,7 +370,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -363,7 +381,7 @@
     {
       "id": 19,
       "name": "Organic Green Tea",
-      "price": 5.50,
+      "price": 5.5,
       "description": "Refreshing organic green tea, rich in antioxidants.",
       "category": "beverages",
       "stockQuantity": 85,
@@ -373,7 +391,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -393,7 +412,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-20T10:00:00Z",
@@ -403,7 +423,7 @@
     {
       "id": 21,
       "name": "Organic Baby Food Puree",
-      "price": 2.50,
+      "price": 2.5,
       "description": "Nutritious organic baby food puree for infants.",
       "category": "baby-food",
       "stockQuantity": 100,
@@ -413,7 +433,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-25T10:00:00Z",
@@ -433,7 +454,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-25T10:00:00Z",
@@ -443,7 +465,7 @@
     {
       "id": 23,
       "name": "Organic Whole Wheat Biscuits",
-      "price": 3.20,
+      "price": 3.2,
       "description": "Healthy organic whole wheat biscuits for snacking.",
       "category": "biscuits-snacks",
       "stockQuantity": 120,
@@ -453,7 +475,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-25T10:00:00Z",
@@ -473,7 +496,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-25T10:00:00Z",
@@ -483,7 +507,7 @@
     {
       "id": 25,
       "name": "Organic Multivitamin Tablets",
-      "price": 15.00,
+      "price": 15,
       "description": "Daily organic multivitamin tablets for overall health.",
       "category": "healthcare",
       "stockQuantity": 60,
@@ -493,7 +517,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-25T10:00:00Z",
@@ -513,7 +538,8 @@
       "imageUrls": [
         "https://picsum.photos/id/237/400/300",
         "https://picsum.photos/id/238/400/300",
-        "https://picsum.photos/id/1/400/300"],
+        "https://picsum.photos/id/1/400/300"
+      ],
       "loved": false,
       "totalQuantity": 0,
       "dealEndTime": "2025-10-25T10:00:00Z",
@@ -558,6 +584,29 @@
       "rating": 5,
       "comment": "Crisp and sweet apples. Highly recommend!",
       "date": "2025-10-12"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-1",
+      "email": "customer@example.com",
+      "username": "customer",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "user-2",
+      "email": "vendor@example.com",
+      "username": "vendor",
+      "password": "password123",
+      "role": "vendor"
+    },
+    {
+      "id": "user-3",
+      "email": "admin@example.com",
+      "username": "admin",
+      "password": "password123",
+      "role": "admin"
     }
   ]
 }

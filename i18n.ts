@@ -44,11 +44,14 @@ i18n.use(initReactI18next).init({
         shop_now: "Shop Now",
         limited_time_offer: "Don't miss this limited time offer.",
         banner_slide_1_badge_text: "Weekend Discount",
-        banner_slide_1_title: "Get the best quality products at the lowest prices",
-        banner_slide_1_description: "We have prepared special discounts for you on organic breakfast products.",
+        banner_slide_1_title:
+          "Get the best quality products at the lowest prices",
+        banner_slide_1_description:
+          "We have prepared special discounts for you on organic breakfast products.",
         banner_slide_2_badge_text: "New Product Launch",
         banner_slide_2_title: "Discover TeeChia Sustained Energy Cereal",
-        banner_slide_2_description: "Fuel your day with organic superfoods. Packed with chia, quinoa, amaranth, flax, ranon, and pumpkin.",
+        banner_slide_2_description:
+          "Fuel your day with organic superfoods. Packed with chia, quinoa, amaranth, flax, ranon, and pumpkin.",
 
         notFoundPage: {
           title: "Page not found",
@@ -148,7 +151,8 @@ i18n.use(initReactI18next).init({
           title: "Featured Products",
           subtitle: "Do not miss the current offers until the end of month.",
           freshFindsTitle: "Fresh Finds for Less.",
-          freshFindsDescription: "Explore our selection of new arrivals that combine quality and affordability.",
+          freshFindsDescription:
+            "Explore our selection of new arrivals that combine quality and affordability.",
         },
         topCategorySection: {
           title: "Top Categories",
@@ -167,14 +171,16 @@ i18n.use(initReactI18next).init({
         newArrivals: {
           title: "New Arrivals",
           subtitle: "Some of the new products arriving this weeks",
-          reviewComment: "Good quality product can only be found in good stores",
+          reviewComment:
+            "Good quality product can only be found in good stores",
           news1: {
             title: "Where flavor meets affordability.",
             description: "Discover our delicious range of affordable ...",
           },
           news2: {
             title: "Fresh Finds for Less.",
-            description: "Explore our selection of new arrivals that combine quality and affordability.",
+            description:
+              "Explore our selection of new arrivals that combine quality and affordability.",
           },
         },
         add_to_cart: "Add to cart",
@@ -188,15 +194,20 @@ i18n.use(initReactI18next).init({
         max_price: "Max price",
         show_label: "Show:",
         items_label: "items",
-        showing_results: "Showing {{startIndex}}-{{endIndex}} of {{totalResults}} results",
+        showing_results:
+          "Showing {{startIndex}}-{{endIndex}} of {{totalResults}} results",
         sort_label: "Sort:",
         no_matching_products: "No matching products found.",
         price_min_zero_error: "Min price must be ≥ 0.",
         price_max_zero_error: "Max price must be ≥ 0.",
-        price_min_upper_limit_error: "Min price cannot exceed max limit ({{upperLimit}}).",
-        price_max_upper_limit_error: "Max price cannot exceed max limit ({{upperLimit}}).",
-        price_min_greater_than_max_error: "Min price cannot be greater than max price.",
-        price_max_less_than_min_error: "Max price cannot be less than min price.",
+        price_min_upper_limit_error:
+          "Min price cannot exceed max limit ({{upperLimit}}).",
+        price_max_upper_limit_error:
+          "Max price cannot exceed max limit ({{upperLimit}}).",
+        price_min_greater_than_max_error:
+          "Min price cannot be greater than max price.",
+        price_max_less_than_min_error:
+          "Max price cannot be less than min price.",
         filterByStatus: {
           productStatus: "Product Status",
           inStock: "In Stock",
@@ -220,9 +231,11 @@ i18n.use(initReactI18next).init({
         },
         confirmItem: {
           paymentTitle: "Payment.",
-          paymentDescription: "Payment upon receipt of goods, Payment by card in the department, Google Pay, Online card, -5% discount in case of payment",
+          paymentDescription:
+            "Payment upon receipt of goods, Payment by card in the department, Google Pay, Online card, -5% discount in case of payment",
           warrantyTitle: "Warranty.",
-          warrantyDescription: "The Consumer Protection Act does not provide for the return of this product of proper quality.",
+          warrantyDescription:
+            "The Consumer Protection Act does not provide for the return of this product of proper quality.",
         },
         productActions: {
           addToWishlist: "Add to wishlist",
@@ -240,9 +253,52 @@ i18n.use(initReactI18next).init({
           add_to_cart: "Add to Cart",
           buy_now: "Buy now",
         },
+        login_form: {
+          account_prompt: "Don't have an account yet? Register now!",
+          username_email_label: "Username or Email",
+          password_label: "Password",
+          remember_me: "Remember me",
+          lost_password: "Lost your password?",
+          log_in_button: "Log In",
+          login_success_title: "Login Successful",
+          login_success_message:
+            "Welcome back {{username}}! Let's go shopping!",
+          login_failure_title: "Login Failed",
+          login_error_message: "An error occurred.",
+          login_failed: "Login failed",
+        },
+        register_form: {
+          advantages_text:
+            "Register now to get all the advantages of our store!",
+          username_label: "Username",
+          email_label: "Email",
+          password_label: "Password",
+          customer_radio: "I am a customer",
+          vendor_radio: "I am a vendor",
+          privacy_policy_prefix:
+            "Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our",
+          privacy_policy_link: "privacy policy",
+          register_success_title: "Registration Successful",
+          register_success_message: "Welcome {{username}}!",
+          register_failure_title: "Registration Failed",
+          register_error_message: "An error occurred.",
+        },
+        validation: {
+          username_min_length:
+            "Tên người dùng hoặc email phải có ít nhất 6 ký tự.",
+          password_min_length: "Mật khẩu phải có ít nhất 6 ký tự.",
+        },
+        auth: {
+          login: "Login",
+          register: "Register",
+        },
+        logout: {
+          success_title: "Logout successfully!",
+          success_message: "Your account have logged out!"
+        },
+        product_categories: "Product Categories",
+        widget_price_filter: "Price filter",
       },
-      product_categories: "Product Categories",
-      widget_price_filter: "Price filter"
     },
     vi: {
       translation: {
@@ -254,9 +310,11 @@ i18n.use(initReactI18next).init({
         },
         confirmItem: {
           paymentTitle: "Thanh toán.",
-          paymentDescription: "Thanh toán khi nhận hàng, Thanh toán bằng thẻ tại cửa hàng, Google Pay, Thẻ trực tuyến, -5% giảm giá khi thanh toán",
+          paymentDescription:
+            "Thanh toán khi nhận hàng, Thanh toán bằng thẻ tại cửa hàng, Google Pay, Thẻ trực tuyến, -5% giảm giá khi thanh toán",
           warrantyTitle: "Bảo hành.",
-          warrantyDescription: "Luật Bảo vệ Người tiêu dùng không quy định việc trả lại sản phẩm chất lượng tốt này.",
+          warrantyDescription:
+            "Luật Bảo vệ Người tiêu dùng không quy định việc trả lại sản phẩm chất lượng tốt này.",
         },
         productActions: {
           addToWishlist: "Thêm vào danh sách yêu thích",
@@ -322,11 +380,14 @@ i18n.use(initReactI18next).init({
         shop_now: "Mua ngay",
         limited_time_offer: "Đừng bỏ lỡ ưu đãi có hạn này.",
         banner_slide_1_badge_text: "Giảm giá cuối tuần",
-        banner_slide_1_title: "Nhận sản phẩm chất lượng tốt nhất với giá thấp nhất",
-        banner_slide_1_description: "Chúng tôi đã chuẩn bị các chương trình giảm giá đặc biệt dành cho bạn đối với các sản phẩm bữa sáng hữu cơ.",
+        banner_slide_1_title:
+          "Nhận sản phẩm chất lượng tốt nhất với giá thấp nhất",
+        banner_slide_1_description:
+          "Chúng tôi đã chuẩn bị các chương trình giảm giá đặc biệt dành cho bạn đối với các sản phẩm bữa sáng hữu cơ.",
         banner_slide_2_badge_text: "Ra mắt sản phẩm mới",
         banner_slide_2_title: "Khám phá Ngũ cốc năng lượng bền vững TeeChia",
-        banner_slide_2_description: "Tiếp năng lượng cho ngày của bạn với siêu thực phẩm hữu cơ. Đóng gói với hạt chia, quinoa, amaranth, hạt lanh, ranon và bí ngô.",
+        banner_slide_2_description:
+          "Tiếp năng lượng cho ngày của bạn với siêu thực phẩm hữu cơ. Đóng gói với hạt chia, quinoa, amaranth, hạt lanh, ranon và bí ngô.",
 
         notFoundPage: {
           title: "Không tìm thấy trang",
@@ -347,7 +408,8 @@ i18n.use(initReactI18next).init({
             appStoreDiscount: "Tải ứng dụng Giảm giá 20%",
           },
           newsletter: {
-            title: "Tham gia bản tin của chúng tôi để được giảm giá {{discount}}",
+            title:
+              "Tham gia bản tin của chúng tôi để được giảm giá {{discount}}",
             description:
               "Đăng ký ngay để nhận thông tin cập nhật mới nhất về khuyến mãi & phiếu giảm giá. Đừng lo, chúng tôi không spam!",
             placeholder: "Nhập địa chỉ email của bạn",
@@ -426,7 +488,8 @@ i18n.use(initReactI18next).init({
           title: "Sản phẩm nổi bật",
           subtitle: "Đừng bỏ lỡ các ưu đãi hiện tại cho đến cuối tháng.",
           freshFindsTitle: "Sản phẩm mới với giá tốt hơn.",
-          freshFindsDescription: "Khám phá các sản phẩm mới của chúng tôi, kết hợp giữa chất lượng và giá cả phải chăng.",
+          freshFindsDescription:
+            "Khám phá các sản phẩm mới của chúng tôi, kết hợp giữa chất lượng và giá cả phải chăng.",
         },
         topCategorySection: {
           title: "Danh mục hàng đầu",
@@ -448,11 +511,13 @@ i18n.use(initReactI18next).init({
           reviewComment: "Sản phẩm chất lượng tốt chỉ có ở những cửa hàng tốt",
           news1: {
             title: "Nơi hương vị gặp gỡ sự phải chăng.",
-            description: "Khám phá dòng sản phẩm giá cả phải chăng ngon miệng của chúng tôi...",
+            description:
+              "Khám phá dòng sản phẩm giá cả phải chăng ngon miệng của chúng tôi...",
           },
           news2: {
             title: "Tìm kiếm mới với giá tốt hơn.",
-            description: "Khám phá lựa chọn các sản phẩm mới của chúng tôi, kết hợp giữa chất lượng và giá cả phải chăng.",
+            description:
+              "Khám phá lựa chọn các sản phẩm mới của chúng tôi, kết hợp giữa chất lượng và giá cả phải chăng.",
           },
         },
         add_to_cart: "Thêm vào giỏ hàng",
@@ -466,22 +531,70 @@ i18n.use(initReactI18next).init({
         max_price: "Giá tối đa",
         show_label: "Hiển thị:",
         items_label: "sản phẩm",
-        showing_results: "Hiển thị {{startIndex}}-{{endIndex}} trên tổng số {{totalResults}} kết quả",
+        showing_results:
+          "Hiển thị {{startIndex}}-{{endIndex}} trên tổng số {{totalResults}} kết quả",
         sort_label: "Sắp xếp:",
         no_matching_products: "Không có sản phẩm nào phù hợp.",
         price_min_zero_error: "Giá tối thiểu phải ≥ 0.",
         price_max_zero_error: "Giá tối đa phải ≥ 0.",
-        price_min_upper_limit_error: "Giá tối thiểu không được vượt quá giới hạn tối đa ({{upperLimit}}).",
-        price_max_upper_limit_error: "Giá tối đa không được vượt quá giới hạn tối đa ({{upperLimit}}).",
-        price_min_greater_than_max_error: "Giá tối thiểu không được lớn hơn giá tối đa.",
-        price_max_less_than_min_error: "Giá tối đa không được nhỏ hơn giá tối thiểu.",
-      },
+        price_min_upper_limit_error:
+          "Giá tối thiểu không được vượt quá giới hạn tối đa ({{upperLimit}}).",
+        price_max_upper_limit_error:
+          "Giá tối đa không được vượt quá giới hạn tối đa ({{upperLimit}}).",
+        price_min_greater_than_max_error:
+          "Giá tối thiểu không được lớn hơn giá tối đa.",
+        price_max_less_than_min_error:
+          "Giá tối đa không được nhỏ hơn giá tối thiểu.",
+        login_form: {
+          account_prompt: "Chưa có tài khoản? Đăng ký ngay!",
+          username_email_label: "Tên người dùng hoặc Email",
+          password_label: "Mật khẩu",
+          remember_me: "Ghi nhớ tôi",
+          lost_password: "Quên mật khẩu?",
+          log_in_button: "Đăng nhập",
+          login_success_title: "Đăng nhập thành công",
+          login_success_message:
+            "Chào mừng {{username}} đã quay trở lại! Cùng mua sắm thôi!",
+          login_failure_title: "Đăng nhập thất bại",
+          login_error_message: "Có lỗi xảy ra.",
+          login_failed: "Đăng nhập thất bại",
+        },
+        register_form: {
+          advantages_text:
+            "Đăng ký ngay để nhận tất cả các lợi ích của cửa hàng chúng tôi!",
+          username_label: "Tên người dùng",
+          email_label: "Email",
+          password_label: "Mật khẩu",
+          customer_radio: "Tôi là khách hàng",
+          vendor_radio: "Tôi là nhà cung cấp",
+          privacy_policy_prefix:
+            "Dữ liệu cá nhân của bạn sẽ được sử dụng để hỗ trợ trải nghiệm của bạn trên trang web này, để quản lý quyền truy cập vào tài khoản của bạn và cho các mục đích khác được mô tả trong",
+          privacy_policy_link: "chính sách bảo mật",
+          register_success_title: "Đăng ký thành công",
+          register_success_message: "Chào mừng {{username}}!",
+          register_failure_title: "Đăng ký thất bại",
+          register_error_message: "Có lỗi xảy ra.",
+        },
+        validation: {
+          username_min_length:
+            "Tên người dùng hoặc email phải có ít nhất 6 ký tự.",
+          password_min_length: "Mật khẩu phải có ít nhất 6 ký tự.",
+        },
+        auth: {
+          login: "Đăng nhập",
+          register: "Đăng ký",
+        },
         product_actions: {
           add_to_cart: "Thêm vào giỏ hàng",
           buy_now: "Mua ngay",
         },
-      product_categories: "Danh mục sản phẩm",
-      widget_price_filter: "Lọc sản phẩm theo giá"
+        logout: {
+          success_title: "Đã đăng xuất!",
+          success_message: "Bạn chưa đăng nhập hãy đăng nhập ngay!"
+        },
+        product_categories: "Danh mục sản phẩm",
+        widget_price_filter: "Lọc sản phẩm theo giá",
+      },
     },
   },
 });

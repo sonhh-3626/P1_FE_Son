@@ -1,6 +1,8 @@
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import Button from "../../../../components/common/Button";
-import { FaMinus, FaPlus, FaTrash } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
+import AdjustItem from "../../../../components/common/AdjustItem";
 import type { CartItem } from "../../../../redux/features/cartSlice";
 import { incrementQuantity, decrementQuantity, removeItemFromCart } from "../../../../redux/features/cartSlice";
 import { currencyService, useSelectedCurrency } from "../../../../services/currencyService";
@@ -10,6 +12,7 @@ interface CartItemProps {
 
 export default function CartItem({ item } : CartItemProps) {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const selectedCurrency = useSelectedCurrency();
 
   const handleIncreaseQuantity = () => {
@@ -24,16 +27,21 @@ export default function CartItem({ item } : CartItemProps) {
     dispatch(removeItemFromCart(item.id));
   };
 
+  const navigateToProductDetail = () => navigate(`/products/${item.id}`)
+
   return (
     <div
       key={item.id}
-      className="flex items-center justify-between py-4"
+      className="grid grid-cols-[2fr_1fr_1fr_auto] items-center py-4 gap-4"
     >
-      <div className="flex items-center gap-4">
+      <div
+        className="flex items-center gap-4 cursor-pointer"
+        onClick={navigateToProductDetail}
+      >
         <img
           src={item.imageUrls ? item.imageUrls[0] : ''}
           alt={item.name}
-          className="w-16 h-16 rounded object-cover border"
+          className="w-16 h-16 rounded object-cover"
         />
         <div>
           <p className="font-medium">{item.name}</p>
@@ -43,17 +51,15 @@ export default function CartItem({ item } : CartItemProps) {
         </div>
       </div>
 
-      <div className="flex items-center gap-3">
-        <Button onClick={handleDecreaseQuantity}>
-          <FaMinus className="w-4 h-4" />
-        </Button>
-        <span className="w-6 text-center">{item.quantity}</span>
-        <Button onClick={handleIncreaseQuantity}>
-          <FaPlus className="w-4 h-4" />
-        </Button>
+      <div className="flex items-center justify-center">
+        <AdjustItem
+          value={item.quantity}
+          onDecrement={handleDecreaseQuantity}
+          onIncrement={handleIncreaseQuantity}
+        />
       </div>
 
-      <div className="w-24 text-right font-semibold">
+      <div className="text-right font-semibold">
         {currencyService.formatPrice(item.price * item.quantity, selectedCurrency)}
       </div>
 
