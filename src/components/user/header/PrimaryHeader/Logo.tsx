@@ -11,10 +11,10 @@ export default function Logo() {
 
   return (
     <div className={styles.logoContainer} onClick={handleLogoClick}>
-      <img src="/logo.svg" alt="ShopStore Logo" className="h-10 w-10 mr-2" />
+      <img src="/logo.svg" alt="ShopStore Logo" className="h-8 w-8 mr-1" />
 
       <div className={styles.textWrapper}>
-        <span className="text-2xl font-bold text-black">ShopStore</span>
+        <span className="text-xl font-bold text-black">ShopStore</span>
       </div>
     </div>
   );

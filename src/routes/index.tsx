@@ -9,6 +9,8 @@ import ProductDetailPage from "../pages/user/product-detail/ProductDetailPage";
 import AuthPage from "../pages/user/auths/AuthPage";
 import PaymentPage from "../pages/user/payment/PaymentPage";
 import OrderPage from "../pages/user/my-account/order-page/OrderPage";
+import AdminLayout from "../layout/AdminLayout";
+import DashBoard from "../pages/admin/dashboard/DashBoard";
 
 export const router = createBrowserRouter([
   {
@@ -49,4 +51,18 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  {
+    element: <AdminLayout />,
+    children: [
+      {
+        index: true,
+        path: "/dashboard",
+        element: <DashBoard />,
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
+      },
+    ],
+  }
 ]);
