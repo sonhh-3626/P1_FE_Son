@@ -1,15 +1,15 @@
-import { useNavigate } from "react-router-dom";
 interface CategoryCardProps {
   imgUrl?: string;
   title?: string;
   pathTo: string;
+  onClick: (categoryName: string) => void;
 }
 
-export default function CategoryCard({ imgUrl='', title, pathTo }: CategoryCardProps) {
-  const navigate = useNavigate();
-
+export default function CategoryCard({ imgUrl = '', title, onClick }: CategoryCardProps) {
   const handleCardClick = () => {
-    navigate(pathTo);
+    if (title) {
+      onClick(title);
+    }
   };
 
   return (
@@ -27,4 +27,4 @@ export default function CategoryCard({ imgUrl='', title, pathTo }: CategoryCardP
       </h3>
     </div>
   );
-};
+}

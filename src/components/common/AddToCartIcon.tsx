@@ -12,7 +12,7 @@ export default function AddToCartIcon({ productId, onAddToCart, className }: Add
   return (
     <div className={`${className}`}>
       <button
-        className="flex w-6 h-6 rounded-full bg-[#634C9F] text-white hover:bg-purple-700"
+        className="flex items-center justify-center w-6 h-6 rounded-full bg-[#634C9F] text-white hover:bg-purple-700"
         onClick={handleClick}
       >
         +

@@ -4,6 +4,7 @@ import UserLayout from "../layout/UserLayout";
 import HomePage from "../pages/user/home-page/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 import CartPage from "../pages/user/cart-page/CartPage";
+import FilterPage from "../pages/user/filter/FilterPage";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
       {
         path: "/cart",
         element: <CartPage />,
+      },
+      {
+        path: "/shop",
+        element: <FilterPage />,
       },
       {
         path: "*",
