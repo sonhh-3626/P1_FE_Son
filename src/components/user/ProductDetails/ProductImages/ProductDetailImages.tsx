@@ -33,7 +33,7 @@ export default function ProductDetailImages({ product }: ProductDetailImagesProp
         <div className="h-96 w-full">
             <ZoomImage
               imgUrl={zoomImage}
-              productType={product.type}
+              productType={product.product_type}
               discountPercentage={product.discountPercentage}
               onZoomClick={handleOpenModal}
             />

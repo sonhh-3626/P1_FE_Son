@@ -12,6 +12,7 @@ export default function LovedToggle({ loved, onLovedClick, className }: LovedTog
     onLovedClick(event, !loved);
   };
 
+  console.log(loved)
   return (
     <div className={`z-10 ${className}`}>
       <button

@@ -13,7 +13,7 @@ export const generateBreadcrumbs = (
 
   if (product) {
     breadcrumbs.push({
-      label: product.category,
+      label: product.category.name,
       path: `/category/${product.category}`,
     });
 

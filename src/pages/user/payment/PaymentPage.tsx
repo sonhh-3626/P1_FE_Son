@@ -26,9 +26,9 @@ export default function PaymentPage() {
   const [isFreeShipping, setIsFreeShipping] = useState(false);
   const reduxCartItems = useSelector((state: RootState) => state.cart.items);
 
-  if(reduxCartItems.length === 0) {
-    navigate("/cart");
-  }
+  // if(reduxCartItems.length === 0) {
+  //   navigate("/cart");
+  // }
 
   useEffect(() => {
     setCartItems(reduxCartItems);
@@ -61,13 +61,14 @@ export default function PaymentPage() {
         };
         try {
           await orderService.createOrder(orderData);
+          console.log("HELLO", orderData)
+          navigate("/orders");
           dispatch(clearCart());
           toast.push({
             type: "success",
             title: t('order_successful_message'),
             message: t('order_successful_message'),
           });
-          navigate("/orders");
         } catch (error) {
           console.error("Lỗi khi tạo đơn hàng:", error);
           toast.push({

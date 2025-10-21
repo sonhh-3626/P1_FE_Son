@@ -5,13 +5,18 @@ export interface Product {
   name: string;
   price: number;
   description: string;
-  category: string;
+  category: {
+    id: number;
+    name: string;
+    slug: string;
+  };
 
   stockQuantity: number;
   totalQuantity: number;
   discountPercentage: number;
 
-  type: ProductType;
+  product_type: ProductType;
+  reviewCount: number;
 
   rating: number;
   ratingCount?: number;

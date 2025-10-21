@@ -4,8 +4,8 @@ import { Provider, useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from "react-i18next";
 
 import { type RootState, type AppDispatch } from "./redux/store";
-import { fetchProducts } from "./redux/features/productSlice";
 import store from "./redux/store";
+import { fetchProducts } from "./services/productService";
 import { router } from "./routes";
 
 function AppContent() {

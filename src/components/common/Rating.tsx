@@ -29,8 +29,8 @@ const renderRating = (rating: number) => {
 export default function Rating({ rating, ratingCount, className }: RatingProps) {
   return (
     <div className={`flex items-center my-1 ${className}`}>
-      {renderRating(rating || 0)}
-      <span className="text-gray-500 text-sm ml-2">({ratingCount || 1})</span>
+      {renderRating(rating)}
+      {ratingCount && (<span className="text-gray-500 text-sm ml-2">({ratingCount || 1})</span>)}
     </div>
 
   )

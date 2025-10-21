@@ -29,7 +29,7 @@ export default function ZoomModal({ imgUrl, onClose }: ZoomModalProps) {
               <img
                   src={imgUrl}
                   alt="Zoomed Product Detail"
-                  className="object-contain"
+                  className="object-contain w-250"
               />
           </div>
       </div>

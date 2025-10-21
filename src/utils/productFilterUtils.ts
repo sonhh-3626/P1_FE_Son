@@ -29,7 +29,7 @@ export const applyFilters = (
     if (activeFilters.category?.length && !activeFilters.category.includes(product.category)) {
       return false;
     }
-    if (activeFilters.type?.length && !activeFilters.type.includes(product.type)) {
+    if (activeFilters.type?.length && !activeFilters.type.includes(product.product_type)) {
       return false;
     }
     if (activeFilters.price?.length) {

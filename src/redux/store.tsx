@@ -13,7 +13,7 @@ export const store = configureStore({
     filters: filterReducer,
     reviews: reviewsReducer,
     user: userReducer,
-    order: orderReducer,
+    orders: orderReducer,
   },
 });
 

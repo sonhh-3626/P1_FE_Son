@@ -1,55 +1,17 @@
-import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import { type Product } from '../../types/Product';
-
-const serverUrl = import.meta.env.VITE_SERVER_URL;
+import { fetchProducts, fetchProductsByCategory, fetchProductById } from '../../services/productService';
 
 interface ProductState {
   items: Product[];
+  selectedProduct: Product | null; // Add selectedProduct
   status: 'idle' | 'loading' | 'succeeded' | 'failed';
   error: string | null;
 }
 
-export const fetchProducts = createAsyncThunk(
-  'products/fetchProducts',
-  async (_, { rejectWithValue }) => {
-    try {
-      const response = await fetch(`${serverUrl}/products`);
-      if (!response.ok) {
-        throw new Error('Failed to fetch products');
-      }
-      const data = await response.json();
-      return data as Product[];
-    } catch (error: any) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
-
-export const fetchProductsByCategory = createAsyncThunk(
-  'products/fetchProductsByCategory',
-  async (category: string, { getState, rejectWithValue }) => {
-    const state = getState() as { products: ProductState };
-    const productsForCategory = state.products.items.filter(p => p.category === category);
-
-    if (productsForCategory.length > 0 && state.products.status === 'succeeded') {
-      return productsForCategory;
-    }
-
-    try {
-      const response = await fetch(`${serverUrl}/products?category=${category}`);
-      if (!response.ok) {
-        throw new Error('Failed to fetch products by category');
-      }
-      const data = await response.json();
-      return data as Product[];
-    } catch (error: any) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
-
 const initialState: ProductState = {
   items: [],
+  selectedProduct: null,
   status: 'idle',
   error: null,
 };
@@ -62,6 +24,9 @@ const productSlice = createSlice({
       const index = state.items.findIndex(product => product.id === action.payload.id);
       if (index !== -1) {
         state.items[index] = action.payload;
+      }
+      if (state.selectedProduct && state.selectedProduct.id === action.payload.id) {
+        state.selectedProduct = action.payload;
       }
     },
   },
@@ -76,6 +41,19 @@ const productSlice = createSlice({
         state.items = action.payload;
       })
       .addCase(fetchProducts.rejected, (state, action) => {
+        state.status = 'failed';
+        state.error = action.payload as string;
+      })
+      .addCase(fetchProductById.pending, (state) => {
+        state.status = 'loading';
+        state.error = null;
+        state.selectedProduct = null;
+      })
+      .addCase(fetchProductById.fulfilled, (state, action: PayloadAction<Product>) => {
+        state.status = 'succeeded';
+        state.selectedProduct = action.payload;
+      })
+      .addCase(fetchProductById.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.payload as string;
       })

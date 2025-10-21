@@ -15,13 +15,13 @@ export default function CheckboxField({
     <div className="flex items-center mb-2">
       <input
         type="checkbox"
-        id={`checkbox-${id}`}
+        id={`${id}`}
         className="mr-2 cursor-pointer accent-blue-500"
         onChange={handleChange}
         checked={checked}
       />
       <label
-        htmlFor={`checkbox-${id}`}
+        htmlFor={`${id}`}
         className="text-sm text-gray-700 cursor-pointer select-none"
       >
         {title}

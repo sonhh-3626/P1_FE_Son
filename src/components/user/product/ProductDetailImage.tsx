@@ -46,10 +46,10 @@ export default function ProductDetailImage({ product }: ProductDetailImageProps)
         </div>
 
         <div className="flex justify-between items-end">
-          {product.type && (
+          {product.product_type && (
             <TypeBadge
-              label={product.type.toUpperCase()}
-              type={product.type === "organic" ? "organic" : product.type === "cold sale" ? "cold-sale" : ""}
+              label={product.product_type.toUpperCase()}
+              type={product.product_type === "organic" ? "organic" : product.product_type === "cold sale" ? "cold-sale" : ""}
             />
           )}
 

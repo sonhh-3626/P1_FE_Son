@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { type RootState, useAppDispatch } from '../../../../redux/store';
-import { fetchProductsByCategory } from '../../../../redux/features/productSlice';
+import { fetchProductsByCategory } from '../../../../services/productService';
 import ProductCard from '../../../../components/user/product/ProductCard';
 import SectionTitle from '../../../../components/common/SectionTitle';
 
@@ -23,7 +23,7 @@ export default function RelatedProducts({ currentProductId, category }: RelatedP
   }, [category, dispatch, status]);
 
   const relatedProducts = products.filter(
-    (product) => product.id !== currentProductId && product.category === category
+    (product) => product.id !== currentProductId && product.category.name === category
   );
 
   return (

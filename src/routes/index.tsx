@@ -8,7 +8,8 @@ import FilterPage from "../pages/user/filter/FilterPage";
 import ProductDetailPage from "../pages/user/product-detail/ProductDetailPage";
 import AuthPage from "../pages/user/auths/AuthPage";
 import PaymentPage from "../pages/user/payment/PaymentPage";
-import OrderPage from "../pages/user/my-account/order-page/OrderPage";
+import OrderListPage from "../pages/user/order-list/OrderListPage";
+import OrderDetailPage from "../pages/user/order-detail/OrderDetailPage";
 
 export const router = createBrowserRouter([
   {
@@ -41,7 +42,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/orders",
-        element: <OrderPage />
+        element: <OrderListPage />
+      },
+      {
+        path: "/orders/:id",
+        element: <OrderDetailPage />
       },
       {
         path: "*",

@@ -18,11 +18,12 @@ const initialState: ReviewsState = {
 export const fetchReviewsByProductId = createAsyncThunk(
   'reviews/fetchReviewsByProductId',
   async (productId: number) => {
-    const response = await fetch(`${serverUrl}/reviews?productId=${productId}`);
+    const response = await fetch(`${serverUrl}/products/${productId}/get_reviews`);
     if (!response.ok) {
       throw new Error('Failed to fetch reviews');
     }
     const data: Review[] = await response.json();
+    console.log(data);
     return data;
   }
 );

@@ -8,8 +8,9 @@ import ProductPurchaseActions from "./ProductPurchaseActions";
 import type { Product } from "../../../../types/Product";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "../../../../hooks/useAppDispatch";
-import { addItemToCart } from "../../../../redux/features/cartSlice";
+import { addItemToCart, getQuantityFromCart, updateItemQuantity } from "../../../../redux/features/cartSlice";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 interface ProductInfoProps {
   product: Product;
@@ -17,8 +18,11 @@ interface ProductInfoProps {
 
 export default function ProductInfo({ product }: ProductInfoProps) {
   const navigate = useNavigate();
-  const [quantity, setQuantity] = useState(1);
+  const currentQuantity = useSelector((state: any) => getQuantityFromCart(state, product.id));
+
+  const [quantity, setQuantity] = useState(Math.max(1, currentQuantity));
   const { t } = useTranslation();
+  const dispatch = useAppDispatch();
 
   const handleOrderOnWhatsApp = () => {
     navigate("whatsapp-order")
@@ -32,16 +36,16 @@ export default function ProductInfo({ product }: ProductInfoProps) {
     setQuantity((prev) => prev + 1);
   };
 
-  const dispatch = useAppDispatch();
-
   const handleAddToCart = () => {
-    for (let i = 0; i < quantity; i++) {
-      dispatch(addItemToCart(product));
-    }
+    dispatch(addItemToCart(product));
+    dispatch(updateItemQuantity({ productId: product.id, quantity }));
   };
 
   const handleBuyNow = () => {
-    // TO DO navigate to Payment Page
+    for (let i = 0; i < quantity; i++) {
+      dispatch(addItemToCart(product));
+    }
+    navigate("/payment")
   };
 
   const [dealEndTime] = useState<Date>(

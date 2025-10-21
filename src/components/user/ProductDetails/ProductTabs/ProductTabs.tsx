@@ -9,6 +9,7 @@ import { type Product } from '../../../../types/Product';
 import {
   REVIEWS_PER_PAGE_DEFAULT
 } from '../../../../constants/reviewsPerPageConstants';
+import DescriptionTab from './DescriptionTab';
 
 interface ProductTabsProps {
   product: Product;
@@ -59,14 +60,12 @@ export default function ProductTabs({ product }: ProductTabsProps) {
           }`}
           onClick={() => setActiveTab('reviews')}
         >
-          {t('product_reviews_tab')} ({reviews.length})
+          {t('product_reviews_tab')} ({product.reviewCount})
         </button>
       </div>
       <div className="mt-4 p-4 bg-white rounded-lg shadow-sm">
         {activeTab === 'description' && (
-          <div>
-            <p className="text-gray-700">{product.description}</p>
-          </div>
+          <DescriptionTab description={product.description} />
         )}
         {activeTab === 'reviews' && (
           <div>
